@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    
+        <style>
+            .foter {
+               position: fixed;
+               left: 0;
+               bottom: 0;
+               width: 100%;
+               background-color: rgb(72, 177, 247);
+               color: white;
+               text-align: center;
+               justify-content: flex;
+               
+            }
+            </style>
+
+        <h1>AS Messenger</h1>
+
+        <div class="content">
+
+            
+
+            <ul id="cafe-list"></ul>
+            <div class ="foter">
+            <form id="add-cafe-form">
+                <input type="text" name="name" placeholder="Write message">
+                <!-- <input type="text" name="city" placeholder="Cafe city"> -->
+                <button>Send</button>
+            </form></class>
+        </div>
+
+        <script>
+            // Initialize Firebase
+            // var config = {
+            //     apiKey: "AIzaSyBrItE-kYM4dU0kaft7WYjb3749lCv42uA",
+            //     authDomain: "ninja-firestore.firebaseapp.com",
+            //     databaseURL: "https://ninja-firestore.firebaseio.com",
+            //     projectId: "ninja-firestore",
+            //     storageBucket: "ninja-firestore.appspot.com",
+            //     messagingSenderId: "176079657618"
+            // };
+            
+            var config = {
+    apiKey: "AIzaSyC7N9aVMujDF-lcP7QXCoroliyhc97jbyY",
+    authDomain: "horizontal-tube-313218.firebaseapp.com",
+    databaseURL: "https://horizontal-tube-313218-default-rtdb.firebaseio.com",
+    projectId: "horizontal-tube-313218",
+    storageBucket: "horizontal-tube-313218.appspot.com",
+    messagingSenderId: "821819306720",
+    appId: "1:821819306720:web:94b263906fa6951fc49685",
+    measurementId: "G-BDQ19711FZ"
+  };
+            
+            firebase.initializeApp(config);
+            const db = firebase.firestore();
+            db.settings({ timestampsInSnapshots: true }); 
+        </script>
+        <script src="app.js"></script>
+    </body>
+</html>
