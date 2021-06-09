@@ -23,7 +23,7 @@ function renderCafe(doc){
     cross.addEventListener('click', (e) => {
         e.stopPropagation();
         let id = e.target.parentElement.getAttribute('data-id');
-        db.collection('cafes').doc(id).delete();
+       // db.collection('cafes').doc(id).delete();
     });
 }
 
@@ -52,7 +52,7 @@ db.collection('cafes').onSnapshot(snapshot => {
         console.log(change.doc.data());
         if(change.type == 'added'){
             renderCafe(change.doc);
-        } else if (change.type == 'removd'){
+        } else if (change.type == 'remvd'){
             let li = cafeList.querySelector('[data-id=' + change.doc.id + ']');
             // cafeList.removeChild(li);
         }
