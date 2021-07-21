@@ -28,7 +28,6 @@ function renderCafe(doc){
 
 
 
-// saving data
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     db.collection('cafes').add({
