@@ -36,8 +36,6 @@ form.addEventListener('submit', (e) => {
     form.name.value = '';
     // form.city.value = '';
 });
-
-// real-time listener
 db.collection('cafes').onSnapshot(snapshot => {
     let changes = snapshot.docChanges();
     changes.forEach(change => {
