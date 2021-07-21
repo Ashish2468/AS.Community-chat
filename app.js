@@ -26,12 +26,7 @@ function renderCafe(doc){
     });
 }
 
-// getting data
-// db.collection('cafes').orderBy('city').get().then(snapshot => {
-//     snapshot.docs.forEach(doc => {
-//         renderCafe(doc);
-//     });
-// });
+
 
 // saving data
 form.addEventListener('submit', (e) => {
