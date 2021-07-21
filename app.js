@@ -13,7 +13,7 @@ function renderCafe(doc){
     cross.textContent = '🤗';
 
     li.appendChild(name);
-    // li.appendChild(city);
+
     li.appendChild(cross);
 
     cafeList.appendChild(li);
