@@ -9,7 +9,7 @@ function renderCafe(doc){
 
     li.setAttribute('data-id', doc.id);
     name.textContent = doc.data().name;
-    // city.textContent = doc.data().city;
+
     cross.textContent = '🤗';
 
     li.appendChild(name);
