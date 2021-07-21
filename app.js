@@ -18,7 +18,7 @@ function renderCafe(doc){
 
     cafeList.appendChild(li);
 
-    // deleting data
+
     cross.addEventListener('click', (e) => {
         e.stopPropagation();
         let id = e.target.parentElement.getAttribute('data-id');
